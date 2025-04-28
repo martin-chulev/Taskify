@@ -1,0 +1,61 @@
+﻿Taskify - A Simple Task Management System
+
+Features
+
+1. User Management:
+
+✅ Sign Up: Users should be able to register with their name, email, and password.
+✅ Login: Users can log in using their email and password.
+Profile Management: Users can update their name, email, or password.
+
+2. Task Management:
+
+Create Task: Users can create a new task by providing:
+- Title
+- Description
+- Priority (Low, Medium, High)
+- Due Date
+
+View Tasks:
+- Display a list of tasks for the logged-in user.
+- Include filtering options (e.g., by priority or status).
+
+Edit Task: Users can update the task details (title, description, priority, and due date).
+
+Delete Task: Users can delete a task.
+
+Mark Task as Complete: Allow users to toggle the status of a task between "Incomplete" and "Complete."
+
+3. Task Dashboard:
+
+Display a summary of:
+- Total tasks
+- Completed tasks
+- Pending tasks
+
+Provide a visual indicator for overdue tasks (e.g., red highlighting).
+
+
+
+Technical Requirements
+A. Backend:
+Framework: .NET Core or .NET 6+.
+API: Build RESTful APIs to handle backend logic (e.g., user authentication, task management).
+Database: Use Entity Framework Core for database interactions, with SQLite or SQL Server as the database.
+Authentication: Implement authentication and authorization using Identity or JWT.
+Validation: Validate user inputs on the backend.
+B. Frontend:
+Framework: Use Razor Pages or MVC.
+UI: Create a simple and user-friendly interface with Bootstrap or TailwindCSS.
+Task List: Use dynamic elements (like AJAX or partial views) to update the task list without refreshing the page.
+C. Deployment:
+Host the project on Azure (or another hosting platform like AWS or Heroku).
+Use a CI/CD pipeline to automate deployments.
+
+
+Stretch Goals (Optional Enhancements)
+Tags: Allow users to categorize tasks using tags (e.g., "Work", "Personal").
+Search: Add a search bar to find tasks by title or description.
+Dark Mode: Implement a toggle for light/dark themes.
+Notifications: Add email reminders for tasks nearing their due dates.
+Multi-User Support: Allow task assignment to other registered users.
